@@ -11,6 +11,16 @@
 		FCBC3B7D2706DD4400872829 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC3B7C2706DD4400872829 /* ContentView.swift */; };
 		FCBC3B7F2706DD4900872829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B7E2706DD4900872829 /* Assets.xcassets */; };
 		FCBC3B822706DD4900872829 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B812706DD4900872829 /* Preview Assets.xcassets */; };
+		FCBC3B9527076C2D00872829 /* hippo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B8B27076C2500872829 /* hippo.mp4 */; };
+		FCBC3B9627076C2D00872829 /* cheetah.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B8C27076C2600872829 /* cheetah.mp4 */; };
+		FCBC3B9727076C2D00872829 /* gorilla.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B8D27076C2600872829 /* gorilla.mp4 */; };
+		FCBC3B9827076C2D00872829 /* lion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B8E27076C2700872829 /* lion.mp4 */; };
+		FCBC3B9927076C2D00872829 /* rhino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B8F27076C2800872829 /* rhino.mp4 */; };
+		FCBC3B9A27076C2D00872829 /* giraffe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B9027076C2900872829 /* giraffe.mp4 */; };
+		FCBC3B9B27076C2D00872829 /* ostrich.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B9127076C2A00872829 /* ostrich.mp4 */; };
+		FCBC3B9C27076C2D00872829 /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B9227076C2B00872829 /* zebra.mp4 */; };
+		FCBC3B9D27076C2D00872829 /* lioness.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B9327076C2C00872829 /* lioness.mp4 */; };
+		FCBC3B9E27076C2D00872829 /* elephant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCBC3B9427076C2D00872829 /* elephant.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		FCBC3B7E2706DD4900872829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCBC3B812706DD4900872829 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCBC3B832706DD4900872829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBC3B8B27076C2500872829 /* hippo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hippo.mp4; sourceTree = "<group>"; };
+		FCBC3B8C27076C2600872829 /* cheetah.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cheetah.mp4; sourceTree = "<group>"; };
+		FCBC3B8D27076C2600872829 /* gorilla.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gorilla.mp4; sourceTree = "<group>"; };
+		FCBC3B8E27076C2700872829 /* lion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lion.mp4; sourceTree = "<group>"; };
+		FCBC3B8F27076C2800872829 /* rhino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rhino.mp4; sourceTree = "<group>"; };
+		FCBC3B9027076C2900872829 /* giraffe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe.mp4; sourceTree = "<group>"; };
+		FCBC3B9127076C2A00872829 /* ostrich.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ostrich.mp4; sourceTree = "<group>"; };
+		FCBC3B9227076C2B00872829 /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
+		FCBC3B9327076C2C00872829 /* lioness.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lioness.mp4; sourceTree = "<group>"; };
+		FCBC3B9427076C2D00872829 /* elephant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = elephant.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,7 @@
 		FCBC3B792706DD4400872829 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				FCBC3B8A27076BF700872829 /* Video */,
 				FCBC3B7A2706DD4400872829 /* AfricaApp.swift */,
 				FCBC3B7C2706DD4400872829 /* ContentView.swift */,
 				FCBC3B7E2706DD4900872829 /* Assets.xcassets */,
@@ -67,6 +88,23 @@
 				FCBC3B812706DD4900872829 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCBC3B8A27076BF700872829 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC3B8C27076C2600872829 /* cheetah.mp4 */,
+				FCBC3B9427076C2D00872829 /* elephant.mp4 */,
+				FCBC3B9027076C2900872829 /* giraffe.mp4 */,
+				FCBC3B8D27076C2600872829 /* gorilla.mp4 */,
+				FCBC3B8B27076C2500872829 /* hippo.mp4 */,
+				FCBC3B8E27076C2700872829 /* lion.mp4 */,
+				FCBC3B9327076C2C00872829 /* lioness.mp4 */,
+				FCBC3B9127076C2A00872829 /* ostrich.mp4 */,
+				FCBC3B8F27076C2800872829 /* rhino.mp4 */,
+				FCBC3B9227076C2B00872829 /* zebra.mp4 */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +164,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBC3B9627076C2D00872829 /* cheetah.mp4 in Resources */,
+				FCBC3B9D27076C2D00872829 /* lioness.mp4 in Resources */,
+				FCBC3B9827076C2D00872829 /* lion.mp4 in Resources */,
 				FCBC3B822706DD4900872829 /* Preview Assets.xcassets in Resources */,
+				FCBC3B9B27076C2D00872829 /* ostrich.mp4 in Resources */,
+				FCBC3B9727076C2D00872829 /* gorilla.mp4 in Resources */,
+				FCBC3B9927076C2D00872829 /* rhino.mp4 in Resources */,
+				FCBC3B9C27076C2D00872829 /* zebra.mp4 in Resources */,
+				FCBC3B9E27076C2D00872829 /* elephant.mp4 in Resources */,
+				FCBC3B9527076C2D00872829 /* hippo.mp4 in Resources */,
+				FCBC3B9A27076C2D00872829 /* giraffe.mp4 in Resources */,
 				FCBC3B7F2706DD4900872829 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
