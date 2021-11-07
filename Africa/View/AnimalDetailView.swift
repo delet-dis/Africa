@@ -25,8 +25,8 @@ struct AnimalDetailView: View {
                     .foregroundColor(.primary)
                     .background(
                         Color.accentColor
-                        .frame(height: 6)
-                        .offset(y: 24)
+                            .frame(height: 6)
+                            .offset(y: 24)
                     )
                 
                 Text(animal.headline)
@@ -35,21 +35,21 @@ struct AnimalDetailView: View {
                     .foregroundColor(.accentColor)
                     .padding(.horizontal)
                 
-                Group{
+                Group {
                     HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Widlerness in pictures")
                     
                     InsetGalleryView(animal: animal)
                 }
                 .padding(.horizontal)
                 
-                Group{
+                Group {
                     HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
                     
-                    InsetFactView(animal:animal)
+                    InsetFactView(animal: animal)
                 }
                 .padding(.horizontal)
                 
-                Group{
+                Group {
                     HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
                     
                     Text(animal.description)
@@ -58,14 +58,14 @@ struct AnimalDetailView: View {
                 }
                 .padding(.horizontal)
                 
-                Group{
+                Group {
                     HeadingView(headingImage: "map", headingText: "National parks")
                     
                     InsetMapView()
                 }
                 .padding(.horizontal)
                 
-                Group{
+                Group {
                     HeadingView(headingImage: "books.vertical", headingText: "Learn more")
                     
                     ExternalWeblinkView(animal: animal)

@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct HeadingView: View {
-    
-    let headingImage:String
-    let headingText:String
-    
+    let headingImage: String
+    let headingText: String
+
     var body: some View {
         HStack {
             Image(systemName: headingImage)
                 .foregroundColor(.accentColor)
                 .imageScale(.large)
-            
+
             Text(headingText)
                 .font(.title3)
                 .fontWeight(.bold)

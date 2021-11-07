@@ -15,25 +15,25 @@ struct InsetMapView: View {
         Map(coordinateRegion: $region)
             .overlay(
                 NavigationLink(
-                destination: MapView()) {
-                    HStack {
-                        Image(systemName: "mappin.circle")
-                            .imageScale(.large)
+                    destination: MapView()) {
+                        HStack {
+                            Image(systemName: "mappin.circle")
+                                .imageScale(.large)
 
-                        Text("Locations")
-                            .foregroundColor(.accentColor)
-                            .fontWeight(.bold)
-                    }
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 14)
-                    .background(
-                        Color.black
-                            .opacity(0.4)
-                            .cornerRadius(8)
-                    )
-            }
-                .padding(12)
-                , alignment: .topTrailing
+                            Text("Locations")
+                                .foregroundColor(.accentColor)
+                                .fontWeight(.bold)
+                        }
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 14)
+                        .background(
+                            Color.black
+                                .opacity(0.4)
+                                .cornerRadius(8)
+                        )
+                }
+                .padding(12),
+                alignment: .topTrailing
             )
             .frame(height: 256)
             .cornerRadius(12)

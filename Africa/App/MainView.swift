@@ -33,8 +33,6 @@ struct MainView: View {
                     Image(systemName: "photo")
                     Text("Gallery")
                 }
-            
-            
         }
     }
 }
