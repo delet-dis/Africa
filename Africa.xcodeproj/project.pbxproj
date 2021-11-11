@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		FC6301D12737C3BE003ADA6F /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6301D02737C3BE003ADA6F /* AnimalGridItemView.swift */; };
 		FC6301F4273D8820003ADA6F /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6301F3273D8820003ADA6F /* CreditsView.swift */; };
 		FC6301FE273D89B1003ADA6F /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6301FD273D89B1003ADA6F /* Stickers.xcassets */; };
-		FC630202273D89B1003ADA6F /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC6301FB273D89AF003ADA6F /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC630202273D89B1003ADA6F /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC6301FB273D89AF003ADA6F /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC63020C273D8B9B003ADA6F /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63020B273D8B9B003ADA6F /* CenterModifier.swift */; };
 		FC6A34E327292CF000D09884 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A34E227292CF000D09884 /* MapAnnotationView.swift */; };
 		FC6CE9D92728679E0087A11E /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6CE9D82728679E0087A11E /* LocationModel.swift */; };
@@ -89,6 +89,8 @@
 		FC6301FD273D89B1003ADA6F /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		FC6301FF273D89B1003ADA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC63020B273D8B9B003ADA6F /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		FC630211273D8F4A003ADA6F /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
+		FC630214273D900E003ADA6F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/iOSSupport/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		FC6A34E227292CF000D09884 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		FC6CE9D82728679E0087A11E /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		FCBC3B772706DD4400872829 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 		FC6301D8273D84FD003ADA6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC630214273D900E003ADA6F /* SwiftUI.framework */,
 				FC6301D9273D84FD003ADA6F /* Messages.framework */,
 			);
 			name = Frameworks;
@@ -196,6 +199,7 @@
 		FCBC3B792706DD4400872829 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				FC630211273D8F4A003ADA6F /* Africa.entitlements */,
 				FC63020A273D8B8A003ADA6F /* Modifier */,
 				FC5067072721C4F400A1DFDD /* Helper */,
 				FCBC3BC22709F99300872829 /* Extension */,
@@ -447,6 +451,7 @@
 /* Begin PBXTargetDependency section */
 		FC630201273D89B1003ADA6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = FC6301FA273D89AF003ADA6F /* Stickers */;
 			targetProxy = FC630200273D89B1003ADA6F /* PBXContainerItemProxy */;
 		};
@@ -464,6 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delet-dis.Africa.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -479,6 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delet-dis.Africa.Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -605,6 +612,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
 				DEVELOPMENT_TEAM = 892KGV2B93;
@@ -617,6 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delet-dis.Africa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -628,6 +637,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
 				DEVELOPMENT_TEAM = 892KGV2B93;
@@ -640,6 +650,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delet-dis.Africa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
