@@ -19,9 +19,9 @@ struct ContentView: View {
 
     func gridSwitch() {
         gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
-        
+
         gridColumn = gridLayout.count
-        
+
         switch gridColumn {
         case 1:
             toolbarIcon = "square.grid.2x2"
@@ -49,6 +49,9 @@ struct ContentView: View {
                                 AnimalListItemView(animal: animal)
                             }
                         }
+
+                        CreditsView()
+                            .modifier(CenterModifier())
                     }
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
